@@ -1,0 +1,41 @@
+\documentclass[%
+    12pt,
+    english,
+    b5paper,
+]%
+{book}
+
+\usepackage{oppgavemal1}
+
+\begin{document}
+
+\pagestyle{plain}
+\input{tex/00-frontpage}\clearpage
+
+
+
+\frontmatter
+\input{tex/01-abstract}\clearpage
+\input{tex/02-sammendrag}\clearpage
+\input{tex/03-acknowledgments}\clearpage
+
+\tableofcontents\clearpage
+\input{tex/04-introduction}\clearpage
+
+
+\mainmatter
+\pagestyle{fancy}
+\input{tex/10-chapter1}
+\input{tex/11-section1}
+
+
+\appendix
+\input{tex/A-appendixA}
+
+\input{tex/B-appendixB}
+
+
+\bibliographystyle{alpha}
+\bibliography{references}
+
+\end{document}
